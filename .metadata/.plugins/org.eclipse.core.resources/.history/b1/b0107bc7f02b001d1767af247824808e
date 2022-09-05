@@ -1,0 +1,38 @@
+package challenge1;
+
+import java.util.Scanner;
+
+public class Challenge1_2 {
+
+	public static void main(String[] args) {
+		int higherNumber = 0;
+		int numberEntries;
+		int arrayValues[];
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("How many numbers are you going to entry?");
+		numberEntries = scanner.nextInt();
+		
+		arrayValues = new int [numberEntries];
+		
+		for (int i = 0; i < numberEntries; i++) {
+			
+			System.out.println("Type the number and press 'Enter'.");
+			arrayValues[i] = scanner.nextInt();
+			
+			higherNumber = arrayValues[i];
+		}
+		
+		
+		for (int i = 0; i < numberEntries; i++) {
+			if (arrayValues[i] > higherNumber) {
+				higherNumber = arrayValues[i];
+			}
+		
+		
+		
+		}
+		scanner.close();
+	}
+
+}

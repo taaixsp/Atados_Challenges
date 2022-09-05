@@ -1,0 +1,47 @@
+/*Dada uma lista A de N inteiros, retornar o menor inteiro positivo (maior que 0) que não
+ocorre em A.
+Argumentos:
+● A: lista de inteiros
+Retornos:
+● inteiro: menor inteiro positivo
+Exemplo:
+A = [1, 2, 3]
+menor_positivo_inteiro = 4 */
+
+
+
+package challenge1;
+
+import java.util.Scanner;
+
+public class Challenge1_2 {
+
+	public static void main(String[] args) {
+		int higherNumber = 0;                 //I need to know the higher number from the input so I can calculate the next one
+		int numberEntries;                    //I need to know how many numbers there are
+		int arrayValues[];                    //keep all numbers
+		Scanner scanner = new Scanner(System.in);       //reads what was typed
+		
+		System.out.println("How many numbers are you going to type?");   //asking how many numbers there are
+		numberEntries = scanner.nextInt();                               //keeps number of entries typed  
+		
+		arrayValues = new int [numberEntries];       //initializing vector to receive amount of numbers
+		
+		for (int i = 0; i < numberEntries; i++) {	 //to check how many numbers there are		
+			System.out.println("Type the number and press 'Enter'.");
+			arrayValues[i] = scanner.nextInt();      //reads the typed numbers
+			
+			higherNumber = arrayValues[i];          //helps to keep numbers above 0
+		}
+		
+		for (int i = 0; i < numberEntries; i++) {  //checks which is higher
+			if (arrayValues[i] > higherNumber) {   //if arrayvalues is higher than highernumber, highernumber will get the arrayvalues value
+				higherNumber = arrayValues[i];
+			}
+					
+		}
+		System.out.println("The lower positive number out of the list is " + (higherNumber + 1));  //printing out the result with concatenation
+		scanner.close();
+	}
+
+}

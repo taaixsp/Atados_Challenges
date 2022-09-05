@@ -1,0 +1,45 @@
+/*Dada uma lista A de N inteiros, retornar o menor inteiro positivo (maior que 0) que não
+ocorre em A.
+Argumentos:
+● A: lista de inteiros
+Retornos:
+● inteiro: menor inteiro positivo
+Exemplo:
+A = [1, 2, 3]
+menor_positivo_inteiro = 4 */
+
+
+
+
+
+package challenge1;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Challenge1 {
+
+	public static void main(String[] args) {
+		
+		int lower_number = 0; //keeps lower number
+		int numberEntries;    //how many entries user is going to type
+		int values[];         //keeps all numbers
+		List<Entries> entries = new ArrayList<>(); //arraylist is empty because changes size automatically
+		Scanner scanner = new Scanner (System.in); //importing library util scanner to read entries
+		
+		
+		System.out.println("How many numbers do you want to insert?");
+		numberEntries = scanner.nextInt();
+		
+		values = new int[numberEntries];
+		
+		for(int 1 = 0; i < numberEntries; i++) {
+			System.out.println("Insert values:");
+			numberEntries[i] = scanner.nextInt();
+		}
+		
+
+	}
+
+}

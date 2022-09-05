@@ -1,0 +1,9 @@
+/*Dada uma lista A de N inteiros, retornar o menor inteiro positivo (maior que 0) que não
+ocorre em A.
+Argumentos:
+● A: lista de inteiros
+Retornos:
+● inteiro: menor inteiro positivo
+Exemplo:
+A = [1, 2, 3]
+menor_positivo_inteiro = 4 */
