@@ -38,13 +38,12 @@ public class Challenge1 {
 		for (int i = 0; i < numberEntries; i++) {  //checks which is higher
 			if (arrayValues[i] > higherNumber) {   //if arrayvalues is higher than highernumber, highernumber will get the arrayvalues value
 				higherNumber = arrayValues[i];
-															
-				} else if (arrayValues[i] < 0) {  //elif to make sure all numbers are positive
+				System.out.println("The lower positive number out of the list is " + (higherNumber + 1));  //printing out the result with concatenation
+				scanner.close();
+				break;
+				
+				} else if (arrayValues[i] < 0) {
 					System.out.println("The numbers must be positive.");
-					break;
-				} else {                         //printing the result
-					System.out.println("The lower positive number out of the list is " + (higherNumber + 1));  //printing out the result with concatenation
-					scanner.close();
 					break;
 				}
 			

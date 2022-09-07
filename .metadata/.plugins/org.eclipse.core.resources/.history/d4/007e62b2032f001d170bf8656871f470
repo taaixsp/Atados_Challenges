@@ -20,9 +20,9 @@ public class Challenge2 {
         String word = input.next(); //input
         
         char mostRepeated = charMostRepeated(word); //defining type to get most repeated character      
-        System.out.println("The character that has repeated the most is: " + mostRepeated + "."); // output with concatenation for the most repeated letter
+        System.out.println("The character that has repeated the most is: " + mostRepeated + "."); // output with concatenation
         
-        System.out.println("It has repeated " + counts_occurrencies(mostRepeated, word) + " times."); //output with concatenation for how many times it repeated
+        System.out.println("It has repeated " + counts_occurrencies(mostRepeated, word) + " times.");
 
         input.close();
     }
@@ -32,7 +32,7 @@ public class Challenge2 {
     	int characters[] = new int[256];                 //256 convention
         int length = string.length();                     //checks the size of word
         char mostRepeated = ' ';                          //keeps most repeated character
-        int biggerIndex = -1;                              //index from most repeated character / -1 because it stars in 0
+        int biggerIndex = -1;                              //index from most repeated character
 
         for (int i = 0; i < length; i++) {                //going through characters from given word
             characters[string.charAt(i)]++;                  //incrementing value
