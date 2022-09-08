@@ -8,7 +8,6 @@ Saída: a: 4 */
 
 package challenge2;
 
-
 import java.util.Scanner;
 
 public class Challenge2 {
@@ -46,7 +45,6 @@ public class Challenge2 {
             }
         }
         return mostRepeated;
-        
     }
 
     public static int counts_occurrencies(char character, String string) {   //keeps how many times the word appears
@@ -58,7 +56,5 @@ public class Challenge2 {
             }
         }
         return counter;
-        
     }
-    
 }
